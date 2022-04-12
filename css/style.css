@@ -1,0 +1,25 @@
+.emptyMessage {
+        font-weight: bold;
+        color: red;
+        font-size: 1.2em;
+      }
+      li {
+        margin-bottom: 7px;
+        font-size: 1.2em;
+      }
+      li > button {
+        margin-left: 6px;
+      }
+      button > span {
+        color: green;
+      }
+      table{
+        border: 1px solid;
+      }
+      table td {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+      }
+      td { 
+        padding: 1px;
+     }

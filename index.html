@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Narrow Down Your Chinese Menu Choice</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/founditems.component.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+<body ng-app="NarrowItDownApp">
+  <div class="container">
+    <h1>Narrow Down Your Chinese Menu Choice</h1>
+    <div  ng-controller="NarrowItDownController">
+    <div class="form-group">
+      <input ng-model="searchTerm"  placeholder="search term" class="form-control">
+
+    </div>
+    <div class="form-group narrow-button">
+      <button class="btn btn-primary" ng-click="foundItems()">Narrow It Down For Me!</button>
+    </div>
+
+
+
+    <!-- found-items should be implemented as a component -->
+<br>
+
+
+    <founditems></founditems>   
+
+ 
+ <div class="emptyMessage">{{message.msg}}</div>
+ 
+
+   </div><!--end ng controller -->    
+
+
+
+
+ </div> <!--end container >-->
+
+</body>
+</html>
